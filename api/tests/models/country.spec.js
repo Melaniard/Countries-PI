@@ -18,5 +18,8 @@ describe('Country model', () => {
         Country.create({ name: 'Argentina' });
       });
     });
+
+
+
   });
 });
