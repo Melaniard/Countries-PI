@@ -1,0 +1,64 @@
+.navbar {
+	display: flex;
+	width: 100%;
+	height: 10vh;
+	position: relative;
+	top: 0;
+	left: 0;
+	background-image: url('https://i.pinimg.com/originals/66/33/4c/66334ce03421dfbc2750270c8c6455f4.jpg');
+	background-position: center;
+	z-index: 0;
+}
+
+.navbar::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: #dad4cc83;
+	z-index: -1;
+	border-bottom: 1px solid #776c62;
+}
+.container {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0 5vw;
+}
+
+.earth {
+	color: #49423c;
+}
+
+.earth:hover {
+	cursor: pointer;
+	/* text-decoration: underline; */
+}
+
+.byana {
+	font-size: 1.7rem;
+	color: #776c62;
+}
+
+.filterContainer {
+	height: 50%;
+	width: 40%;
+	display: flex;
+	align-items: center;
+}
+
+.filter {
+	height: 80%;
+	width: 32%;
+	background-color: #f3f1ed;
+	border: 1px solid #f3f1ed;
+	padding: 5px;
+}
+
+.filter:last-of-type {
+	width: 28%;
+}
