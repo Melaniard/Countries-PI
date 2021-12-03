@@ -11,16 +11,16 @@ export default function Pages({ amountPerPage, totalAmount, pageNumber }) {
     return (
         <nav className={styles.numBar}>
             <div className={styles.numContainer}>
-                {pageNumbers &&
+                {pageNumber &&
                     pageNumbers.map((num) => {
                         return (
-                            <a
+                            <button
                                 key={num}
                                 className={styles.number}
                                 onClick={() => pageNumber(num)}
                             >
                                 {num}
-                            </a>
+                            </button>
                         )
                     })}
             </div>

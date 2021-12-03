@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react'
+import { Link } from 'react-router-dom'
 import { useDispatch, useSelector } from 'react-redux'
 import {
     getAllCountries,
@@ -7,7 +8,6 @@ import {
     filterByActivityName,
     sort,
 } from '../actions'
-import { Link } from 'react-router-dom'
 import { Country } from './Country'
 import Pages from './Pages'
 import styles from './Home.module.css'
@@ -15,6 +15,7 @@ import Navbar from './Navbar'
 import Error from './Error'
 
 export default function Home() {
+
     const dispatch = useDispatch()
     const countries = useSelector((state) => state.countries)
 

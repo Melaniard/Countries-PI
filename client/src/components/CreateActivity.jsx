@@ -70,13 +70,19 @@ export default function CreateActivity() {
                         <label className={styles.label} htmlFor='duration'>
                             Duration:
                         </label>
-                        <input
-                            type='text'
+                        <select
                             id='duration'
                             name='duration'
                             className={styles.input}
                             onChange={(e) => handleChange(e)}
-                        />
+                        >
+                            <option value=''>Duration...</option>
+                            <option value='1-3'>1 - 3 hours.</option>
+                            <option value='4-6'>4 - 6 hours.</option>
+                            <option value='6-8'>6 - 8 hours.</option>
+                            <option value='+8'>+8 hours.</option>
+                            <option value='24'>Full-day.</option>
+                        </select>
                     </div>
 
                     <div className={styles.formSection}>
@@ -90,11 +96,11 @@ export default function CreateActivity() {
                             onChange={(e) => handleChange(e)}
                         >
                             <option value=''>Difficulty...</option>
-                            <option value='1'>1</option>
-                            <option value='2'>2</option>
-                            <option value='3'>3</option>
-                            <option value='4'>4</option>
-                            <option value='5'>5</option>
+                            <option value='1'>1 - No difficulty</option>
+                            <option value='2'>2 - Beginner</option>
+                            <option value='3'>3 - Intermediate</option>
+                            <option value='4'>4 - Advanced</option>
+                            <option value='5'>5 - Expert</option>
                         </select>
                     </div>
 

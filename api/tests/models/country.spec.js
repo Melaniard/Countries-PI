@@ -18,8 +18,15 @@ describe('Country model', () => {
         Country.create({ name: 'Argentina' });
       });
     });
-
-
-
   });
+  describe('Country', () => {
+    it('should throw an error if no continent is provided', (done) => {
+      Country.create({
+        flag: 'https://restcountries.eu/data/col.svg',
+        name: 'Venezuela',
+      })
+        .then(() => done(new Error('Please provide a valid continent')))
+        .catch(() => done())
+    })
+  })
 });

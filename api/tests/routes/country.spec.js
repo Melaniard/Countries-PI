@@ -20,5 +20,14 @@ describe('Country routes', () => {
     it('should get 200', () =>
       agent.get('/countries').expect(200)
     );
+    it('expects content to be of type JSON', () => {
+      agent.get('/countries').expect('Content-Type', /json/)
+    });
   });
+  describe('GET /countries/:id', () => {
+    it('should return status 200', () => agent.get('/countries').expect(200))
+    it('expects content to be of type JSON', () => {
+      agent.get('/countries').expect('Content-Type', /json/)
+    })
+  })
 });
