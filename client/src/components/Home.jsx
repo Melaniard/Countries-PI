@@ -86,20 +86,6 @@ export default function Home() {
                     </Link>
                 </button>
             </div>
-
-            {/* <div className={styles.countryContainer}>
-        {currentCountries &&
-          currentCountries.map((c) => (
-            <Country
-              name={c.name}
-              flag={c.flag}
-              id={c.id}
-              key={c.id}
-              continent={c.continent}
-            />
-          ))}
-      </div> */}
-
             <div className={styles.countryContainer}>
                 {currentCountries.length ? (
                     currentCountries.map((c) => (
