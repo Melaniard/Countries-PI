@@ -71,7 +71,7 @@ export function sort(payload) {
 export function createActivity(details) {
   return async function (dispatch) {
     const newActivity = await axios.post(
-      'http://localhost:3001/activity',
+      'http://localhost:3001/activities',
       details
     )
     console.log(newActivity)

@@ -10,7 +10,7 @@ export default function Details({ country }) {
 
     useEffect(() => {
         dispatch(getCountryDetails(country))
-    })
+    }, [dispatch, country])
 
     return (
         <div className={styles.container}>

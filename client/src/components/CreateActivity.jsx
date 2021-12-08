@@ -37,6 +37,7 @@ export default function CreateActivity() {
 
     function handleSubmit(e) {
         e.preventDefault()
+        //console.log(details)
         dispatch(createActivity(details))
         setDetails({
             name: '',
@@ -76,12 +77,12 @@ export default function CreateActivity() {
                             className={styles.input}
                             onChange={(e) => handleChange(e)}
                         >
-                            <option value=''>Duration...</option>
-                            <option value='1-3'>1 - 3 hours.</option>
-                            <option value='4-6'>4 - 6 hours.</option>
-                            <option value='6-8'>6 - 8 hours.</option>
-                            <option value='+8'>+8 hours.</option>
-                            <option value='24'>Full-day.</option>
+                            <option value=''>Duration in hour</option>
+                            <option value='1'>1</option>
+                            <option value='2'>2</option>
+                            <option value='3'>3</option>
+                            <option value='4'>4</option>
+                            <option value='5'>5</option>
                         </select>
                     </div>
 
@@ -96,11 +97,11 @@ export default function CreateActivity() {
                             onChange={(e) => handleChange(e)}
                         >
                             <option value=''>Difficulty...</option>
-                            <option value='1'>1 - No difficulty</option>
-                            <option value='2'>2 - Beginner</option>
-                            <option value='3'>3 - Intermediate</option>
-                            <option value='4'>4 - Advanced</option>
-                            <option value='5'>5 - Expert</option>
+                            <option value='1'>1</option>
+                            <option value='2'>2</option>
+                            <option value='3'>3</option>
+                            <option value='4'>4</option>
+                            <option value='5'>5</option>
                         </select>
                     </div>
 
@@ -134,7 +135,7 @@ export default function CreateActivity() {
                         >
                             <option value=''>Countries...</option>
                             {countries.map((c) => (
-                                <option value={c.id}>{c.name}</option>
+                                <option key={c.id} value={c.id}>{c.name}</option>
                             ))}
                         </select>
                     </div>

@@ -12,7 +12,6 @@ module.exports = (sequelize) => {
     name: {
       type: DataTypes.STRING,
       allowNull: false
-      
     },
     difficulty:{
         type: DataTypes.INTEGER,
@@ -31,5 +30,5 @@ module.exports = (sequelize) => {
         allowNull: false
     },
   },
-  { timestamps: false });
+  { timestamps: false }); //CON ESTO ELIMINO los campos createdAt y updatedAt QUE VIENEN POR DEFAULT.
 };

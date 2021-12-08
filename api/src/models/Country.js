@@ -36,5 +36,5 @@ module.exports = (sequelize) => {
       type: DataTypes.FLOAT,
     },
   },
-    { timestamps: false });
+    { timestamps: false }); //CON ESTO ELIMINO los campos createdAt y updatedAt QUE VIENEN POR DEFAULT.
 };

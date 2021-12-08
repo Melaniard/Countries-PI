@@ -24,7 +24,6 @@ router.get('/:id', async (req, res) => {
     if (!one) {
         return res.status(404).send('Error: country not found')
     }
-    console.log(one)
     return res.json(one)
 });
 

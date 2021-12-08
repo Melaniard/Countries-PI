@@ -48,11 +48,10 @@ export default function Home() {
     //ordenar por nombre o poblacion
     function handleSort(e) {
         e.preventDefault()
-        dispatch(sort(e.target.value))
-        setCurrentPage(1)
         setOrder(e.target.value)
+        dispatch(sort(order))
+        setCurrentPage(1) 
     }
-
     /*
     Lógica: en cada pag, voy tomando del array de países (importado del estado global en la constante countries)
     una slice que vaya desde firstIdx hasta lastIdx, sin incluir este último.
