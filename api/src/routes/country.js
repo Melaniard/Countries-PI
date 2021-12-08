@@ -12,10 +12,6 @@ router.get("/", async (req, res) => {
         const found = await Country.findAll({
             where: { name: { [Op.substring]: name } },
         })
-        // if (!found.length) {
-        // return res.status(404).send('Error: country not found')
-        //   return res.send([])
-        // }
         return res.json(found)
     }
     res.json(all)
