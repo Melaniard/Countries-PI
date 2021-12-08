@@ -47,14 +47,10 @@ export default function Navbar({ sort, contFilter, actFilter, actNameFilter }) {
                     {/* filtro por actividad */}
                     <select className={styles.filter} onChange={(e) => actNameFilter(e)}>
                         <option value='All'>Filter by activity...</option>
-                        <option value='Mountaineering'>Mountaineering</option>
                         <option value='Hiking'>Hiking</option>
                         <option value='Skiing'>Skiing</option>
                         <option value='Surfing'>Surfing</option>
                         <option value='Diving'>Diving</option>
-                        <option value='Kayaking'>Kayaking</option>
-                        <option value='Paragliding'>Paragliding</option>
-                        <option value='Bungee'>Bungee Jumping</option>
                         <option value='Cycling'>Cycling</option>                        
                     </select>
 
