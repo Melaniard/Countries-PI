@@ -56,9 +56,12 @@ export default function Home() {
     Lógica: en cada pag, voy tomando del array de países (importado del estado global en la constante countries)
     una slice que vaya desde firstIdx hasta lastIdx, sin incluir este último.
     */
-    var lastIdx = currentPage * countriesPerPage // en la primera página, lastIdx = 1 * 9 = 9
-    var firstIdx = lastIdx - countriesPerPage // en la primera página, firstIdx = 9 - 9 = 0
-    var currentCountries = countries.slice(firstIdx, lastIdx) // en la primera página, currentCharacters = countries.slice(0,9)
+    var lastIdx = currentPage * countriesPerPage 
+    // en la primera página, lastIdx = 1 * 9 = 9
+    var firstIdx = lastIdx - countriesPerPage 
+    // en la primera página, firstIdx = 9 - 9 = 0
+    var currentCountries = countries.slice(firstIdx, lastIdx) 
+    // en la primera página, currentCharacters = countries.slice(0,9)
 
     function handleClick(e) {
         e.preventDefault()
