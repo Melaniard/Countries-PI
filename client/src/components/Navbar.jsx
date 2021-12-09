@@ -39,7 +39,7 @@ export default function Navbar({ sort, contFilter, actFilter, actNameFilter }) {
                     <select className={styles.filter} onChange={(e) => actFilter(e)}>
                         <option value='All'>Filter activities by season...</option>
                         <option value='Summer'>Summer</option>
-                        <option value='Fall'>Fall</option>
+                        <option value='Autumn'>Autumn</option>
                         <option value='Winter'>Winter</option>
                         <option value='Spring'>Spring</option>
                     </select>
@@ -47,11 +47,10 @@ export default function Navbar({ sort, contFilter, actFilter, actNameFilter }) {
                     {/* filtro por actividad */}
                     <select className={styles.filter} onChange={(e) => actNameFilter(e)}>
                         <option value='All'>Filter by activity...</option>
-                        <option value='Hiking'>Hiking</option>
                         <option value='Skiing'>Skiing</option>
                         <option value='Surfing'>Surfing</option>
                         <option value='Diving'>Diving</option>
-                        <option value='Cycling'>Cycling</option>                        
+                        <option value='Walking'>Walking</option>                        
                     </select>
 
                     {/* orden por nombre o poblacion */}

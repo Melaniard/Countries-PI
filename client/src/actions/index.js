@@ -21,7 +21,7 @@ export function getCountriesByName(name) {
         payload: countriesByName.data,
       })
     } catch (error) {
-      console.log(error)
+      //console.log(error)
     }
   }
 }
@@ -35,7 +35,7 @@ export function getCountryDetails(id) {
         payload: details.data,
       })
     } catch (error) {
-      console.log(error)
+      //console.log(error)
     }
   }
 }
@@ -74,7 +74,7 @@ export function createActivity(details) {
       'http://localhost:3001/activities',
       details
     )
-    console.log(newActivity)
+    //console.log(newActivity)
     return newActivity
   }
 }
