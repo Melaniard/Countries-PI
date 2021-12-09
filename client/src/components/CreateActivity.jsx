@@ -77,7 +77,7 @@ export default function CreateActivity() {
                             className={styles.input}
                             onChange={(e) => handleChange(e)}
                         >
-                            <option value=''>Duration in hour</option>
+                            <option value=''>Duration</option>
                             <option value='1'>1</option>
                             <option value='2'>2</option>
                             <option value='3'>3</option>
